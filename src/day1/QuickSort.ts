@@ -11,7 +11,7 @@ function partition(arr: number[], lo: number, hi: number) {
             arr[idx] = tmp;
         }
     }
-    idx++; // incase we can't find more number less than our pivot, we put our pivot to the idx so that the right side of the pivot will be bigger than pivot.
+    idx++; // incase we can't find more number lower than our pivot, we put our pivot to the idx so that the right side of the pivot will be bigger than pivot.
     arr[hi] = arr[idx];
     arr[idx] = pivot;
 
